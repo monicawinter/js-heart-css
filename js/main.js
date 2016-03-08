@@ -4,11 +4,11 @@ var $main = $('main');
 var $h2 = $('h2');
 var $img = $('img');
 var $dl = $('dl');
-var $dl = $('dt');
+var $dt = $('dt');
 
 $header.addClass('masthead');
 
-$('.big-heading').remove();
+$('.big-heading').removeClass();
 $h1.addClass('logo');
 
 $main.addClass('wrapper');
@@ -25,5 +25,6 @@ $('ul li:first-child').addClass('slug-list-first');
 $('ul li:last-child').addClass('slug-list-last');
 
 $dl.addClass('classification');
-$('big-label').remove();
-$('ul li:last-child').append('.slug-list-last');
+$('.big-label').removeClass();
+
+$('ul li:last-child').show('slug-list-last');
